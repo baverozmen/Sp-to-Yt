@@ -1,33 +1,35 @@
 # Spotify to YouTube Music Playlist Transfer
 
-Bu proje, bir Spotify çalma listesini alıp YouTube Music hesabınıza aktarır. Selenium kütüphanesini kullanarak otomatikleştirilmiş bir süreç ile çalışır.
+This project takes a Spotify playlist and transfers it to your YouTube Music account using an automated process powered by Selenium.
+
 
 ---
 
-## Gereksinimler
+## Requirements
 
-Projenin çalışabilmesi için aşağıdaki gereksinimlerin karşılanması gerekir:
+
+To run the project, the following requirements must be met:
 
 - **Python 3.x**
 - **Selenium** 
-- Chromium tarayıcısı ve ChromeDriver
-- Python kütüphaneleri:
+- Chromium browser and ChromeDriver
+- Python libraries:
   - `selenium`
 
 ---
 
-## Kurulum
+## Installation
 
-1. Gerekli Python kütüphanelerini yükleyin:
+1. Install the required Python libraries:
    ```bash
    pip install -r requirements.txt
    ```
    
-2. Chromium ve ChromeDriver'ın yüklü olduğundan emin olun.
+2. Ensure Chromium and ChromeDriver are installed on your system.
     
-3. **ChromeDriver** dosyasının sistem PATH'ine ekli olduğundan emin olun.
-    
-4. Projeyi bilgisayarınıza klonlayın:
+3. Make sure the **ChromeDriver** file is added to your system PATH.
+
+4. Clone the project to your computer:
     
 	 ```bash
 	git clone https://github.com/baverozmen/Yt_to_Sp
@@ -36,24 +38,25 @@ Projenin çalışabilmesi için aşağıdaki gereksinimlerin karşılanması ger
 	```
 
 ---
-## Dosyalar
+## Files
 
 ### 1. `start.py`
 
-Bu dosya, programın ana yürütme dosyasıdır. Kullanıcıdan gerekli bilgileri alır ve aktarım sürecini başlatır.
+This file is the main execution file of the program. It collects the necessary information from the user and starts the transfer process.
 
 ### 2. `spotify_playlist_push.py`
 
-Spotify'dan çalma listesi başlıklarını çeker ve bu verileri bir dosyada saklar.
+This file fetches playlist titles from Spotify and saves them to a file.
 
 ### 3. `yt_pull.py`
 
-YouTube Music'e giriş yapar ve çalma listesindeki şarkıları arayıp hesabınıza ekler.
+This file logs into YouTube Music, searches for songs from the playlist, and adds them to your account.
 
 ---
-## Katkıda Bulunma
+## Contribution
 
-Katkıda bulunmak isterseniz, projeyi fork edip geliştirmeler yapabilirsiniz. Geliştirmelerinizi göndermek için bir pull request oluşturun.
+If you'd like to contribute, you can fork the project and make improvements. Create a pull request to submit your enhancements.
+
 
 
 
@@ -61,4 +64,4 @@ Katkıda bulunmak isterseniz, projeyi fork edip geliştirmeler yapabilirsiniz. G
 	
 ## Lisans
 
-Bu proje, [MIT Lisansı](LICENSE) altında lisanslanmıştır.
+This project is licensed under the [MIT Lisansı](LICENSE)
